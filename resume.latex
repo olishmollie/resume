@@ -1,71 +1,68 @@
-\documentclass{article}
-\usepackage[margin=1in]{geometry}
+\documentclass[9pt]{extarticle}
+\usepackage[left=1.4in,right=1.4in,top=1in,bottom=1in]{geometry}
 \usepackage{times}
 \usepackage{titlesec}
 \usepackage{nopageno}
 
+% Add horizontal rule to section headings.
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\hrule]
 
-\newcommand{\subheading}[2]{\noindent\textbf{\textit{#1}}\hfill{}(#2)}
+% Create commands for dated entries.
+\newcommand{\datedentry}[2]{\noindent\textbf{\textit{#1}}\hfill{}(#2)}
+
+% Remove indentation.
+\setlength\parindent{0pt}
 
 \begin{document}
-\begin{center}
-    {\huge{Andy Bond}}
-
-    \vspace{0.25cm}
-    \large{(512) 775-5919} $\vert$ \large{olishmollie@gmail.com} $\vert$ \large{Denver, CO}
-\end{center}
+\huge{\textbf{ANDREW BOND}}
+\vspace{0.25cm}\newline
+\large{Denver, CO $\vert$ olishmollie@gmail.com $\vert$ (512) 775-5919}
 
 \section*{SKILLS}
-\begin{tabular}{l l}
-    \textbf{\textit{Languages}}:& C/C++, Rust, C\#, Python, Shell, JavaScript, SQL, HTML \\
-    \textbf{\textit{Software}}:& Git, Yocto, Embedded Linux, FreeRTOS, GoogleTest, CMake, Make, Jira \\
-    \textbf{\textit{Hardware}}:& SPI, I\textsuperscript{2}C, UART, ADC/DAC, JTAG, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters \\
-    \textbf{\textit{Soft Skills}}:& Excellent verbal and written communications, Agile development
-\end{tabular}
+C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRTOS, GoogleTest, CMake, Make, Jira, SPI, I\textsuperscript{2}C, UART, ADCs, DACs, TCP/IP, Debugging, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters, Signal Generators, Agile development, Excellent verbal communication
 
 \section*{EXPERIENCE}
-\subheading{Software Engineer II, SEAKR Engineering}{6/2024 - 11/2024}
+\datedentry{Software Engineer II, SEAKR Engineering}{6/2024 - 11/2024}
 \begin{itemize}
     \item Provided software support to radiation tests of commercial processors
     \item Developed robust RPC framework for multi-process, multi-threaded test application
 \end{itemize}
 
-\subheading{Embedded Firmware Engineer, Particle Measuring Systems}{9/2022 - 6/2024}
+\datedentry{Embedded Firmware Engineer, Particle Measuring Systems}{9/2022 - 6/2024}
 \begin{itemize}
-    \item Contributed to modern C++ application design and implementation, including Qt user interface, SQLite interface, and TCP packet protocol library
+    \item Contributed to modern C++ application design and implementation: Qt user interface, SQLite interface, and TCP packet protocol library
     \item Designed and implemented automated testing library for CI/CD pipelines
     \item Maintained an embedded Linux distribution with Yocto, including driver patches
     \item Developed and built a Zynq-based hardware evaluation platform to protoype and retire firmware risks
-    \item Led discussions with management to gather and prioritize product requirements
+    \item Partnered with product management to gather and prioritize product requirements
 \end{itemize}
 
-\subheading{Associate Embedded Firmware Engineer, Current Lighting}{1/2022 - 9/2022}
+\datedentry{Associate Embedded Firmware Engineer, Current Lighting}{1/2022 - 9/2022}
 \begin{itemize}
     \item Created device manager with UDP and BLE backends to connect with networked lighting fixtures
     \item Optimized ICT fixture code to reduce per-unit manufacturing time
-    \item Maintained bare-metal C modules to handle IoT message processing, occupancy logic, system coherency, sensor data streaming, and closed-loop daylight harvesting
+    \item Implemented C features: IoT message processing, occupancy sensors, system coherency, sensor data streaming, and daylight harvesting
 \end{itemize}
 
-\subheading{Firmware Engineering Intern, Current Lighting}{5/2021 - 8/2021}
+\datedentry{Firmware Engineering Intern, Current Lighting}{5/2021 - 8/2021}
 \begin{itemize}
     \item Designed and implemented CI/CD pipeline to test and deliver firmware using Azure Pipelines, Bash, and Python
 \end{itemize}
 
-\subheading{Project Lead, Siemens Energy (University Capstone)}{1/2021 - 12/2021}
+\datedentry{Project Lead, Siemens Energy (University Capstone)}{1/2021 - 12/2021}
 \begin{itemize}
     \item Led team tasked with improving turbine sizing mobile app
     \item Responsible for fully documented and unit-tested C\# .NET backend API
 \end{itemize}
 
 \section*{EDUCATION}
-\subheading{Texas A\&M University, College Station, TX}{9/2019 - 12/2021}
+\datedentry{Texas A\&M University, College Station, TX}{9/2019 - 12/2021}
 \begin{itemize}
     \item B.S. in Electrical Engineering (Summa Cum Laude)
     \item Minor in Computer Science
 \end{itemize}
 
 \section*{ABOUT ME}
-Identical twin, rock drummer, crossword doer, coffee lover, Ruby on Rails bootcamper, daily jogger, pool player
+Identical twin, rock drummer, country singer, crossword lover, coffee drinker, dev bootcamper, daily jogger, pool player
 \end{document}
 

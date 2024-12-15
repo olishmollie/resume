@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage{nopageno}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\hrule]
+
+\newcommand{\subheading}[2]{\noindent\textbf{\textit{#1}}\hfill{}(#2)}
+
+\begin{document}
+\begin{center}
+    {\huge{Andy Bond}}
+
+    \vspace{0.25cm}
+    \large{(512) 775-5919} $\vert$ \large{olishmollie@gmail.com} $\vert$ \large{Denver, CO}
+\end{center}
+
+\section*{SKILLS}
+\begin{tabular}{l l}
+    \textbf{\textit{Languages}}:& C/C++, Rust, C\#, Python, Shell, JavaScript, SQL, HTML \\
+    \textbf{\textit{Software}}:& Git, Yocto, Embedded Linux, FreeRTOS, GoogleTest, CMake, Make, Jira \\
+    \textbf{\textit{Hardware}}:& SPI, I\textsuperscript{2}C, UART, ADC/DAC, JTAG, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters \\
+    \textbf{\textit{Soft Skills}}:& Excellent verbal and written communications, Agile development
+\end{tabular}
+
+\section*{EXPERIENCE}
+\subheading{Software Engineer II, SEAKR Engineering}{6/2024 - 11/2024}
+\begin{itemize}
+    \item Provided software support to radiation tests of commercial processors
+    \item Developed robust RPC framework for multi-process, multi-threaded test application
+\end{itemize}
+
+\subheading{Embedded Firmware Engineer, Particle Measuring Systems}{9/2022 - 6/2024}
+\begin{itemize}
+    \item Contributed to modern C++ application design and implementation, including Qt user interface, SQLite interface, and TCP packet protocol library
+    \item Designed and implemented automated testing library for CI/CD pipelines
+    \item Maintained an embedded Linux distribution with Yocto, including driver patches
+    \item Developed and built a Zynq-based hardware evaluation platform to protoype and retire firmware risks
+    \item Led discussions with management to gather and prioritize product requirements
+\end{itemize}
+
+\subheading{Associate Embedded Firmware Engineer, Current Lighting}{1/2022 - 9/2022}
+\begin{itemize}
+    \item Created device manager with UDP and BLE backends to connect with networked lighting fixtures
+    \item Optimized ICT fixture code to reduce per-unit manufacturing time
+    \item Maintained bare-metal C modules to handle IoT message processing, occupancy logic, system coherency, sensor data streaming, and closed-loop daylight harvesting
+\end{itemize}
+
+\subheading{Firmware Engineering Intern, Current Lighting}{5/2021 - 8/2021}
+\begin{itemize}
+    \item Designed and implemented CI/CD pipeline to test and deliver firmware using Azure Pipelines, Bash, and Python
+\end{itemize}
+
+\subheading{Project Lead, Siemens Energy (University Capstone)}{1/2021 - 12/2021}
+\begin{itemize}
+    \item Led team tasked with improving turbine sizing mobile app
+    \item Responsible for fully documented and unit-tested C\# .NET backend API
+\end{itemize}
+
+\section*{EDUCATION}
+\subheading{Texas A\&M University, College Station, TX}{9/2019 - 12/2021}
+\begin{itemize}
+    \item B.S. in Electrical Engineering (Summa Cum Laude)
+    \item Minor in Computer Science
+\end{itemize}
+
+\section*{ABOUT ME}
+Identical twin, rock drummer, crossword doer, coffee lover, Ruby on Rails bootcamper, daily jogger, pool player
+\end{document}
+

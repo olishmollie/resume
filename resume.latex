@@ -1,34 +1,37 @@
 \documentclass[9pt]{extarticle}
-\usepackage[left=1.4in,right=1.4in,top=1in,bottom=1in]{geometry}
+\usepackage[left=1.2in,right=1.2in,top=1in,bottom=1in]{geometry}
+\usepackage{geometry}
 \usepackage{times}
 \usepackage{titlesec}
 \usepackage{nopageno}
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
 
 % Add horizontal rule to section headings.
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\hrule]
 
-% Create commands for dated entries.
-\newcommand{\datedentry}[2]{\noindent\textbf{\textit{#1}}\hfill{}(#2)}
+% Dated entries.
+\newcommand{\datedentry}[4]{\textbf{#2}\newline{}#1, \textit{#3\textemdash{}#4}}
 
-% Remove indentation.
-\setlength\parindent{0pt}
+% Remove vertical space from lists.
+\setlist{nosep}
 
 \begin{document}
-\huge{\textbf{ANDREW BOND}}
+\huge{\textbf{{ANDREW BOND}}}
 \vspace{0.25cm}\newline
-\large{Denver, CO $\vert$ olishmollie@gmail.com $\vert$ (512) 775-5919}
+\large{Denver, CO\enspace{}$\bullet$\enspace{}olishmollie@gmail.com\enspace{}$\bullet$\enspace{}(512) 775-5919}
 
 \section*{SKILLS}
 C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRTOS, GoogleTest, CMake, Make, Jira, SPI, I\textsuperscript{2}C, UART, ADCs, DACs, TCP/IP, Debugging, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters, Signal Generators, Agile development, Excellent verbal communication
 
 \section*{EXPERIENCE}
-\datedentry{Software Engineer II, SEAKR Engineering}{6/2024 - 11/2024}
+\datedentry{Software Engineer II}{SEAKR Engineering}{August 2024}{November 2024}
 \begin{itemize}
     \item Provided software support to radiation tests of commercial processors
     \item Developed robust RPC framework for multi-process, multi-threaded test application
 \end{itemize}
 
-\datedentry{Embedded Firmware Engineer, Particle Measuring Systems}{9/2022 - 6/2024}
+\datedentry{Embedded Firmware Engineer}{Particle Measuring Systems}{Februrary 2022}{June 2024}
 \begin{itemize}
     \item Contributed to modern C++ application design and implementation: Qt user interface, SQLite interface, and TCP packet protocol library
     \item Designed and implemented automated testing library for CI/CD pipelines
@@ -37,26 +40,26 @@ C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRT
     \item Partnered with product management to gather and prioritize product requirements
 \end{itemize}
 
-\datedentry{Associate Embedded Firmware Engineer, Current Lighting}{1/2022 - 9/2022}
+\datedentry{Associate Embedded Firmware Engineer}{Current Lighting}{January 2022}{September 2022}
 \begin{itemize}
     \item Created device manager with UDP and BLE backends to connect with networked lighting fixtures
     \item Optimized ICT fixture code to reduce per-unit manufacturing time
     \item Implemented C features: IoT message processing, occupancy sensors, system coherency, sensor data streaming, and daylight harvesting
 \end{itemize}
 
-\datedentry{Firmware Engineering Intern, Current Lighting}{5/2021 - 8/2021}
+\datedentry{Firmware Engineering Intern}{Current Lighting}{May 2021}{August 2021}
 \begin{itemize}
     \item Designed and implemented CI/CD pipeline to test and deliver firmware using Azure Pipelines, Bash, and Python
 \end{itemize}
 
-\datedentry{Project Lead, Siemens Energy (University Capstone)}{1/2021 - 12/2021}
+\datedentry{Project Lead}{Siemens Energy (University Capstone)}{January 2021}{December 2021}
 \begin{itemize}
     \item Led team tasked with improving turbine sizing mobile app
     \item Responsible for fully documented and unit-tested C\# .NET backend API
 \end{itemize}
 
 \section*{EDUCATION}
-\datedentry{Texas A\&M University, College Station, TX}{9/2019 - 12/2021}
+\datedentry{Texas A\&M University}{College Station, TX}{September 2019}{December 2021}
 \begin{itemize}
     \item B.S. in Electrical Engineering (Summa Cum Laude)
     \item Minor in Computer Science

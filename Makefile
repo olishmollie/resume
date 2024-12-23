@@ -1,4 +1,4 @@
-resume.pdf: resume.latex
+Andy_Bond.pdf: Andy_Bond.latex
 	pdflatex $^
 
 .PHONY: clean

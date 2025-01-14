@@ -11,7 +11,7 @@
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\hrule]
 
 % Dated entries.
-\newcommand{\datedentry}[4]{\textbf{#2}\newline{}#1, \textit{#3\textemdash{}#4}}
+\newcommand{\datedentry}[4]{\textbf{#2}\newline{}#1, \textit{#3 \textemdash{} #4}}
 
 % Remove vertical space from lists.
 \setlist{nosep}
@@ -22,10 +22,10 @@
 \large{Denver, CO\enspace{}$\bullet$\enspace{}olishmollie@gmail.com\enspace{}$\bullet$\enspace{}(512) 775-5919}
 
 \section*{SKILLS}
-C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRTOS, GoogleTest, CMake, Make, Jira, SPI, I\textsuperscript{2}C, UART, ADCs, DACs, TCP/IP, Debugging, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters, Signal Generators, Agile development, Excellent verbal communication
+C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRTOS, GoogleTest, CMake, Make, Jira, SPI, I\textsuperscript{2}C, UART, ADCs, DACs, Networking, TCP/IP, Wireshark, Debugging, FPGAs, Logic Analyzers, Oscilloscopes, Multimeters, Signal Generators, Agile development, Excellent verbal communication
 
 \section*{EXPERIENCE}
-\datedentry{Software Engineer II}{SEAKR Engineering}{August 2024}{November 2024}
+\datedentry{Software Engineer II}{SEAKR Engineering}{June 2024}{November 2024}
 \begin{itemize}
     \item Provided software support to radiation tests of commercial processors
     \item Developed robust RPC framework for multi-process, multi-threaded test application
@@ -33,7 +33,7 @@ C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRT
 
 \datedentry{Embedded Firmware Engineer}{Particle Measuring Systems}{Februrary 2022}{June 2024}
 \begin{itemize}
-    \item Contributed to modern C++ application design and implementation: Qt user interface, SQLite interface, and TCP packet protocol library
+    \item Contributed to modern C++20 application design and implementation: Qt user interface, SQLite interface, and TCP packet protocol library
     \item Designed and implemented automated testing library for CI/CD pipelines
     \item Maintained an embedded Linux distribution with Yocto, including driver patches
     \item Developed and built a Zynq-based hardware evaluation platform to protoype and retire firmware risks
@@ -42,7 +42,7 @@ C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRT
 
 \datedentry{Associate Embedded Firmware Engineer}{Current Lighting}{January 2022}{September 2022}
 \begin{itemize}
-    \item Created device manager with UDP and BLE backends to connect with networked lighting fixtures
+    \item Created device manager with UDP, BLE and MQTT backends to connect with networked lighting fixtures
     \item Optimized ICT fixture code to reduce per-unit manufacturing time
     \item Implemented C features: IoT message processing, occupancy sensors, system coherency, sensor data streaming, and daylight harvesting
 \end{itemize}

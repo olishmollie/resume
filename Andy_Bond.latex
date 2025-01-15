@@ -35,7 +35,7 @@ C, C++, Python, Shell, Rust, JavaScript, C\#, Verilog, Git, Yocto, Linux, FreeRT
 \begin{itemize}
     \item Contributed to modern C++20 application design and implementation: Qt user interface, SQLite interface, and TCP packet protocol library
     \item Designed and implemented automated testing library for CI/CD pipelines
-    \item Maintained an embedded Linux distribution with Yocto, including driver patches
+    \item Maintained an embedded Linux distribution with Yocto, including driver patches and device tree development
     \item Developed and built a Zynq-based hardware evaluation platform to protoype and retire firmware risks
     \item Partnered with product management to gather and prioritize product requirements
 \end{itemize}
